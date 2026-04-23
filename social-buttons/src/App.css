@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-container{
+  background-image: url('/src/assets/hero.png');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading{
+  font-size: 3.4rem;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.like-btn {
+  background-color: #eab308;
+  color: white;
+}
+
+.comment-btn {
+  background-color: #ffffff;
+  color: black;
+}
+
+.share-btn {
+  background-color:  #1d4ed8;
+  color: white;
+}
