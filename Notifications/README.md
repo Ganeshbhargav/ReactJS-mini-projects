@@ -5,12 +5,6 @@ This project demonstrates reusable components, props, and dynamic styling.
 
 ---
 
-## 🚀 Live Demo
-
-👉 Add your deployed link here (Vercel/Netlify)
-
----
-
 ## 📌 Features
 
 - 🔁 Reusable Notification Component
@@ -32,6 +26,7 @@ This project demonstrates reusable components, props, and dynamic styling.
 ---
 
 ## 📂 Project Structure
+```
 src/
 ├── assets/
 │   ├── primary-icon-img.png
@@ -43,6 +38,7 @@ src/
 ├── App.jsx
 ├── App.css
 └── main.jsx
+```
 
 
 ---
