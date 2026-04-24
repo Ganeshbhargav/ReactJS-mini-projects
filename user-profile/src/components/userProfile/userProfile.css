@@ -1,0 +1,40 @@
+.user-card-container {
+  background-color: #ffffff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.2s ease;
+}
+
+.user-card-container:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 18px;
+  margin: 0;
+  color: #111827;
+}
+
+.user-designation {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
