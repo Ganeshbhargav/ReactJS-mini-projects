@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REACT JS Mini Projects Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(
+          ellipse at bottom,
+          #1b2735 0%,
+          #090a0f 100%
+        );
+        min-height: 100vh;
+        padding: 40px 20px;
+        overflow-x: hidden;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 70px;
+      }
+
+      h1 {
+        font-size: clamp(1.3rem, 5vw, 3.2rem);
+        background: linear-gradient(90deg, #00dbde, #fc00ff, #00dbde);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 6s infinite linear;
+      }
+
+      @keyframes gradientMove {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 300%;
+        }
+      }
+      .subtitle {
+          margin-top: 10px;
+          font-size: clamp(0.8rem, 2vw, 1.2rem);
+          color: #b8c5d6;
+        }
+        
+      .search {
+        width: 100%;
+        padding: 12px 18px;
+        margin-top: 25px;
+        border-radius: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+        color: white;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .search:focus {
+        border-color: #00dbde;
+        box-shadow: 0 0 10px #00dbde;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 30px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        border-color: #00dbde;
+        box-shadow: 0 0 10px #00dbde;
+        
+      }
+
+
+
+      .project-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .project-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .project-description {
+        color: #d0dae8;
+        margin-bottom: 20px;
+      }
+
+      .features-list {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+
+      .features-list li {
+        font-size: 0.95rem;
+        padding: 4px 0;
+        color: #b8c5d6;
+      }
+
+      .features-list li:before {
+        content: "✓ ";
+        color: #a0c4ff;
+        font-weight: bold;
+      }
+
+      .view-project {
+        display: inline-block;
+        padding: 10px 25px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.1);
+        animation: gradientMove 6s infinite linear;
+      }
+      .demo-btn{ 
+        background:linear-gradient(90deg, #00dbde, #fc00ff, #00dbde); 
+        background-size: 300%;
+        padding:8px 14px; 
+        border-radius:20px; 
+        text-decoration:none; 
+        color:white;
+         font-weight: 500;
+         }
+      
+        .github-btn{
+        display:inline-block;
+        padding:10px 20px;
+        border-radius:25px;
+        background: rgba(255, 255, 255, 0.1);
+        color:white;
+        text-decoration:none;
+        font-size:14px;
+        }
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        color: #d224d5;
+        
+      }
+      footer :nth-child(2){
+        color: #00dbde;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>REACT JS MINI PROJECTS</h1>
+        <p class="subtitle"></p>
+        <input
+          id="searchBar"
+          class="search"
+          placeholder="🔍 Search projects..."
+        />
+      </header>
+
+      <div id="projectsGrid" class="projects-grid"></div>
+
+      <footer>
+        <p>Built with HTML, CSS & JavaScript | Click any card to try it out!</p>
+        <p>Developed By <b>Ganesh Bhargav Arani</b></p>
+      </footer>
+    </div>
+
+    <script>
+      // Projects Data
+      const projects = [
+       {
+            title: "Notifications App",
+            icon: "🔔",
+            description:
+                "A simple React app that displays different types of notifications like success, error, warning, and info messages.",
+            features: [
+                "Reusable Notification component",
+                "Different styles for success, error, warning, and info",
+                "Icons for each notification type",
+                "Clean and responsive UI design",
+            ],
+            link: "./Notifications/dist/index.html", // or your deployed link
+            github: "https://github.com/Ganeshbhargav/ReactJS-mini-projects/tree/main/Notifications",
+        },
+        {
+            title: "Social Buttons",
+            icon: "👍",
+            description:
+                "A simple React app that displays social media buttons like Like, Comment, and Share with reusable components.",
+            features: [
+                "Reusable Button component",
+                "Multiple button styles (Like, Comment, Share)",
+                "Clean and responsive UI",
+                "Beginner-friendly React project",
+            ],
+            link: "./social-buttons/dist/index.html",
+            github: "https://github.com/Ganeshbhargav/ReactJS-mini-projects/tree/main/social-buttons",
+        },
+        {
+            title: "Boxes",
+            icon: "📦",
+            description:
+                "A simple React app that displays multiple colored boxes using reusable components.",
+            features: [
+                "Reusable Box component",
+                "Different colors and sizes",
+                "Clean layout using Flexbox",
+                "Beginner-friendly React project",
+            ],
+            link: "./boxes/dist/index.html",
+            github: "https://github.com/Ganeshbhargav/ReactJS-mini-projects/tree/main/boxes",
+        }
+      ];
+      const grid = document.getElementById("projectsGrid");
+      const search = document.getElementById("searchBar");
+
+      function renderProjects(list) {
+        grid.innerHTML = "";
+
+        list.forEach((project) => {
+          const card = document.createElement("a");
+
+          card.href = project.link;
+          card.target = "_blank";
+          card.rel = "noopener noreferrer";
+          card.className = "project-card";
+
+          card.innerHTML = `
+                            <div class="project-icon">${project.icon}</div>
+                            <h2 class="project-title">${project.title}</h2>
+                            <p class="project-description">${project.description}</p>
+                            <ul class="features-list">
+                            ${project.features.map((f) => `<li>${f}</li>`).join("")}
+                            </ul>
+                            <span class="view-project demo-btn">Live Demo</span>
+                            <a href="${project.github}" target="_blank" class=" github-btn">View GitHub</a>
+                            `;
+
+          grid.appendChild(card);
+        });
+      }
+
+      search.addEventListener("input", () => {
+        const value = search.value.toLowerCase();
+
+        const filtered = projects.filter(
+          (p) =>
+            p.title.toLowerCase().includes(value) ||
+            p.description.toLowerCase().includes(value),
+        );
+
+        renderProjects(filtered);
+      });
+
+      document.querySelector(".subtitle").textContent =
+        `${projects.length} REACT JS MINI PROJECTS`;
+
+      renderProjects(projects);
+    </script>
+  </body>
+</html>
+
