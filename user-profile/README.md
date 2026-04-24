@@ -1,16 +1,90 @@
-# React + Vite
+# 👤 User Profile App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React.js project that displays a list of user profiles using reusable components and props. Each user card shows an image, name, and role in a clean UI layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite (if used)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- 🔁 Reusable `UserProfile` component
+- 📦 Dynamic rendering using `props`
+- 🧠 Array mapping with `map()`
+- 🎨 Clean and simple card UI
+- 📱 Responsive layout (optional if added)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```
+
+src/
+│
+├── components/
+│ └── userProfile/
+│ └── userProfile.jsx
+│
+├── App.jsx
+├── App.css
+└── main.jsx
+
+````
+
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/user-profile.git
+````
+
+2. Go to project folder
+
+```bash
+cd user-profile
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the app
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Learning Outcome
+
+This project helped in understanding:
+
+* Component reusability in React
+* Props handling
+* Rendering lists using `map()`
+* Basic UI structuring
+
+---
+
+## 👨‍💻 Author
+
+**Ganesh Bhargav Arani**
+🌐 [GitHub](https://github.com/Ganeshbhargav)
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!
+
