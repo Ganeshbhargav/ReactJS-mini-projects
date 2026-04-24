@@ -11,7 +11,7 @@ These projects demonstrate practical implementation of **components, props, stat
 ## 🌐 Live Demo
 
 👉 Open all projects from one place:
-**[View](https://github.com/Ganeshbhargav/ReactJS-mini-projects/blob/main/index.html)**
+**[View](https://react-js-mini-projects-a284.vercel.app/)**
 
 ---
 
