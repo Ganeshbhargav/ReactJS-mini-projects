@@ -1,0 +1,39 @@
+.welcome-app-container{
+    background-color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+.welcome-app-heading{
+    color: #f0bb03;
+    font-size: 4rem;
+}
+
+.welcome-app-desc{
+    color: white;
+    font-size: 1rem;
+}
+@media screen and (min-width:768px) {
+    .welcome-app-heading{
+        font-size: 5rem;
+    }
+    .welcome-app-desc{
+        font-size: 2rem;
+    }
+}
+.welcome-app-button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.clicked{
+    background-color: red;
+    color: white;
+}
