@@ -1,8 +1,3 @@
-Here’s a **fully polished `README.md`** you can directly copy into your repo — styled, centered, and portfolio-ready 🚀
-
----
-
-```md
 # 🌟 Welcome App (Subscribe Toggle)
 
 <p align="center">
@@ -15,10 +10,6 @@ Here’s a **fully polished `README.md`** you can directly copy into your repo �
 
 ---
 
-## 🚀 Live Demo
-🔗 Coming Soon...
-
----
 
 ## 🎯 Features
 
@@ -43,12 +34,27 @@ Here’s a **fully polished `README.md`** you can directly copy into your repo �
 ```
 
 Welcome-App/
+│── dist/                     # Production build (auto-generated)
+│
+│── public/                  # (optional) static assets
+│
 │── src/
-│   ├── Welcome.js
-│   ├── welcome.css
-│   └── index.js
+│   │── components/
+│   │   └── Welcome/
+│   │       ├── welcome.jsx
+│   │       └── welcome.css
+│   │
+│   │── App.jsx
+│   │── main.jsx
+│   │── index.css
+│
+│── .gitignore
+│── README.md
+│── index.html
 │── package.json
-
+│── package-lock.json
+│── vite.config.js
+│── eslint.config.js
 ````
 
 ---
