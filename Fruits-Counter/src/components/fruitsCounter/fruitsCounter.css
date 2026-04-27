@@ -1,0 +1,56 @@
+.counter-container-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.counter-count-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+   gap: 2rem;
+}
+@media screen and (min-width:768px) {
+    .counter-count-container{
+        flex-direction: row;
+    }
+}
+
+.mango-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.banana-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.image{
+width: 200px;
+}
+@media screen and (min-width:768px) {
+    .image{
+        width: 290px;
+    }
+}
+.fruitsCount{
+    color: #ffd569;
+}
+.btn{
+    height: 40px;
+    width: 90px;
+    background-color:  #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
