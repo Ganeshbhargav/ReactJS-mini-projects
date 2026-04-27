@@ -1,0 +1,87 @@
+.speedometer-container{
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.speedometer-heading{
+    font-size: 1.7rem;
+}
+@media screen and (min-width:768px) {
+    .speedometer-heading{
+        font-size: 2.5rem;
+    }
+}
+.high {
+  color: red;
+}
+
+.medium {
+  color: orange;
+}
+
+.low {
+  color: green;
+}
+.speedometer-image{
+    width: 70%;
+}
+@media screen and (min-width:768px) {
+    .speedometer-image{
+    width: 50%;
+    }
+}
+.speedometer-description{
+    font-size: 0.7rem;
+    color: #cbd5e1;
+}
+@media screen and (min-width:768px) {
+    .speedometer-description{
+        font-size: 1rem;
+    }   
+}
+.speedometer-button-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.accelerate-btn{
+    height: 40px;
+    width: 95px;
+    background-color:  #0b69ff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.speedometer-speed{
+    font-size: 2rem;
+}
+.accelerate-btn:hover{
+    background-color: #1d54ad;
+    transform: scaleX(1.1);
+}
+.brake-btn{
+    height: 40px;
+    width: 95px;
+    background-color:  transparent;
+    color: white;
+    font-size: 0.9rem;
+    border: 2px solid #94a3b8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.brake-btn:hover{
+    background-color: #94a3b8;
+    color: black;
+}
+.error {
+  color: yellow;
+  font-weight: bold;
+}
