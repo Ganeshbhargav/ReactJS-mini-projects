@@ -1,16 +1,86 @@
-# React + Vite
+# Counter App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive Counter application built using React and Vite. This project demonstrates basic state management using React Hooks and component-based architecture.
 
-Currently, two official plugins are available:
+## 🔗 Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+GitHub: [https://github.com/Ganeshbhargav/ReactJS-mini-projects/tree/main/Counter](https://github.com/Ganeshbhargav/ReactJS-mini-projects/tree/main/Counter)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Increase counter value
+* Decrease counter value
+* Instant UI updates using React state
+* Clean and minimal design
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* JavaScript (ES6)
+* CSS
+
+## 📁 Project Structure
+
+```id="tkkzvm"
+Counter/
+│── dist/
+│── src/
+│   ├── components/
+│   │   └── counter/
+│   │       ├── counter.jsx
+│   │       └── counter.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│── index.html
+│── package.json
+│── vite.config.js
+│── eslint.config.js
+│── .gitignore
+│── README.md
+```
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ganeshbhargav/ReactJS-mini-projects.git
+cd ReactJS-mini-projects/Counter
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 4. Open in browser
+
+```
+http://localhost:5173
+```
+
+## 🧠 How It Works
+
+* The `Counter` component uses the `useState` hook to store the count.
+* Clicking **Increase** increments the value.
+* Clicking **Decrease** decrements the value.
+* React automatically updates the UI when the state changes.
+
+## ✨ Future Improvements
+
+* Add Reset button
+* Prevent negative values
+* Add step increment (e.g., +5, -5)
+* Persist data using localStorage
+* Add animations for better UX
+
+
