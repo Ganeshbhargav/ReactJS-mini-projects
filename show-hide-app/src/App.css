@@ -1,0 +1,16 @@
+.show-hide-app{
+  background-image: linear-gradient(to right, #fa7257, #ff6a6a, #ff657d, #ff6292, #fc63a7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.display-name{
+  background-color: #fddddb;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px;
+}
