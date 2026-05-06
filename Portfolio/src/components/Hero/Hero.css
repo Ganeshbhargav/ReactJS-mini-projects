@@ -1,0 +1,83 @@
+.hero {
+  height: 100vh;
+  margin-top: 70px;
+  background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") no-repeat center/cover;
+  position: relative;
+}
+
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h2 {
+  color: #ff4e50;
+  margin: 10px 0;
+}
+.hero-content h2::after {
+  content: "Full Stack Developer";
+  animation: changeText 9s infinite;
+  color: #ff4e50;
+}
+
+@keyframes changeText {
+  0% {
+    content: "Frontend Developer";
+  }
+  50% {
+    content: "React Developer";
+  }
+  100% {
+    content: "MERN Stack Developer";
+  }
+
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4e50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.hero-buttons .primary:hover{
+  background-color: transparent;
+  border: 2px solid #ff4e50;
+}
+.hero-buttons .secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-buttons .secondary:hover {
+  background: white;
+  color: black;
+}
