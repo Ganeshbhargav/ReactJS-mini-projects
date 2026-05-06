@@ -1,16 +1,100 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Personal Portfolio
 
-Currently, two official plugins are available:
+A modern, responsive personal portfolio website built using **React.js** to showcase my projects, skills, and contact information.  
+Designed with a focus on clean UI, responsiveness, and smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Flexbox & Grid
+- Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- ⚡ Fully responsive design (mobile, tablet, desktop)
+- 🎨 Clean and modern UI
+- 📁 Projects showcase section
+- 🧠 About & skills section
+- 📬 Contact section with social links
+- 🔗 Smooth navigation
+- 🚀 Fast and lightweight performance
+
+---
+
+## 📂 Project Structure
+
+```
+
+portfolio/
+│── public/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── App.js
+│   └── index.js
+│
+│── package.json
+└── README.md
+
+````
+
+---
+
+## 🧑‍💻 Projects Showcased
+
+- 📦 Boxes UI App – Reusable React components with dynamic styling  
+- 🧑‍💻 More projects coming soon...
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repo:
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+````
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm start
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+
+## 📌 Future Improvements
+
+* Add dark mode 🌙
+* Add animations using Framer Motion
+* Improve SEO optimization
+* Add blog section
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
